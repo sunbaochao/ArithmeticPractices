@@ -9,9 +9,11 @@ namespace Arithmetics.排序
         public void MainSort()
         {
             int[] nums = { 5, 2, 9, 4, 7, 6, 1, 3, 8 }; // 从小到大快速排序
-            QuickSort(nums,0,nums.Length-1);
+            QuickSort(nums,0,nums.Length-1);//快速排序
             Console.WriteLine(string.Join(',',nums));
         }
+
+        #region 快速排序
 
         private void QuickSort(int[] nums,int left,int right)
         {
@@ -46,5 +48,7 @@ namespace Arithmetics.排序
             nums[left] = nums[right];
             nums[right] = tmp;
         }
+
+        #endregion
     }
 }
