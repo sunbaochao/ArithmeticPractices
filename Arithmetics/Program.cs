@@ -12,13 +12,16 @@ namespace Arithmetics
             
             Stopwatch watch = new Stopwatch();
             watch.Start();
-            //AbstractArithmetic arithmetic = new _1_CheckDifferent();
-            //Console.WriteLine($"The Arithmetic Title : {arithmetic.Title}");
-            //Console.WriteLine($"The Arithmetic Content : {arithmetic.Content}");
-            //Console.WriteLine($"The result is {arithmetic.GetResult()}");
-            var sort = new Sort();
-            sort.MainSort();
-            watch.Stop();
+            
+            AbstractArithmetic arithmetic = new _2_ReverseString();
+            Console.WriteLine($"The Arithmetic Title : {arithmetic.Title}");
+            Console.WriteLine($"The Arithmetic Content : {arithmetic.Content}");
+            Console.WriteLine($"The result is {arithmetic.GetResult()}");
+            
+            //经典排序算法
+            //var sort = new Sort();
+            //sort.MainSort();
+            //watch.Stop();
             Console.WriteLine($"Take time: {watch.ElapsedTicks}");
             Console.ReadKey(true);
         }
